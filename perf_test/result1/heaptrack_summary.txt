@@ -1,0 +1,495 @@
+reading file "/home/cdq4096/projects/p1CodeTest/html_test/perf_test/result1/heaptrack.gz" - please wait, this might take some time...
+Debuggee command was: /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench -t 20 --mem-mb 256 --leak-mb 4
+finished reading file, now analyzing data:
+
+MOST CALLS TO ALLOCATION FUNCTIONS
+5 calls to allocation functions with 5.12K peak consumption from
+__GI__IO_file_doallocate
+  at ./libio/filedoalloc.c:101
+  in /lib/x86_64-linux-gnu/libc.so.6
+1 calls with 4.10K peak consumption from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_overflow
+      at ./libio/fileops.c:744
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_xsputn
+      at ./libio/fileops.c:1243
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_xsputn
+      at ./libio/fileops.c:1196
+    outstring_func
+      at ./stdio-common/vfprintf-internal.c:239
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __vfprintf_internal
+      at ./stdio-common/vfprintf-internal.c:1263
+    ___printf_chk
+      at ./debug/printf_chk.c:33
+      in /lib/x86_64-linux-gnu/libc.so.6
+    printf
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:112
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:161
+    __libc_start_call_main
+      at ../sysdeps/nptl/libc_start_call_main.h:58
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main_impl
+      at ../csu/libc-start.c:392
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _start
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 0B peak consumption from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:182
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 0B peak consumption from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:215
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 0B peak consumption from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:220
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 1.02K peak consumption from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:225
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+4 calls to allocation functions with 472B peak consumption from
+__fopen_internal
+  at ./libio/iofopen.c:65
+  in /lib/x86_64-linux-gnu/libc.so.6
+_IO_new_fopen
+  at ./libio/iofopen.c:86
+1 calls with 0B peak consumption from:
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:42
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:182
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 0B peak consumption from:
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:42
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:215
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 0B peak consumption from:
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:42
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:220
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 calls with 472B peak consumption from:
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:42
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:225
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+1 calls to allocation functions with 268.44M peak consumption from
+mem_work_init
+  at /home/cdq4096/projects/p1CodeTest/html_test/libmemwork/mem_work.cpp:49
+  in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/../lib/libmemwork.so
+1 calls with 268.44M peak consumption from:
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:175
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+1 calls to allocation functions with 4.19M peak consumption from
+mem_work_leak
+  at /home/cdq4096/projects/p1CodeTest/html_test/libmemwork/mem_work.cpp:73
+  in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/../lib/libmemwork.so
+1 calls with 4.19M peak consumption from:
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:223
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+1 calls to allocation functions with 72.70K peak consumption from
+0x7b749b4aa938
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+1 calls with 72.70K peak consumption from:
+    call_init
+      at ./elf/dl-init.c:70
+      in /lib64/ld-linux-x86-64.so.2
+    call_init
+      at ./elf/dl-init.c:33
+      in /lib64/ld-linux-x86-64.so.2
+    _dl_init
+      at ./elf/dl-init.c:117
+    0x7b749b7a62c8
+      at ./elf/rtld.c:0
+      in /lib64/ld-linux-x86-64.so.2
+
+
+PEAK MEMORY CONSUMERS
+268.44M peak memory consumed over 1 calls from
+mem_work_init
+  at /home/cdq4096/projects/p1CodeTest/html_test/libmemwork/mem_work.cpp:49
+  in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/../lib/libmemwork.so
+268.44M consumed over 1 calls from:
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:175
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+4.19M peak memory consumed over 1 calls from
+mem_work_leak
+  at /home/cdq4096/projects/p1CodeTest/html_test/libmemwork/mem_work.cpp:73
+  in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/../lib/libmemwork.so
+4.19M consumed over 1 calls from:
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:223
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+72.70K peak memory consumed over 1 calls from
+0x7b749b4aa938
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+72.70K consumed over 1 calls from:
+    call_init
+      at ./elf/dl-init.c:70
+      in /lib64/ld-linux-x86-64.so.2
+    call_init
+      at ./elf/dl-init.c:33
+      in /lib64/ld-linux-x86-64.so.2
+    _dl_init
+      at ./elf/dl-init.c:117
+    0x7b749b7a62c8
+      at ./elf/rtld.c:0
+      in /lib64/ld-linux-x86-64.so.2
+
+5.12K peak memory consumed over 5 calls from
+__GI__IO_file_doallocate
+  at ./libio/filedoalloc.c:101
+  in /lib/x86_64-linux-gnu/libc.so.6
+4.10K consumed over 1 calls from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_overflow
+      at ./libio/fileops.c:744
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_xsputn
+      at ./libio/fileops.c:1243
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_xsputn
+      at ./libio/fileops.c:1196
+    outstring_func
+      at ./stdio-common/vfprintf-internal.c:239
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __vfprintf_internal
+      at ./stdio-common/vfprintf-internal.c:1263
+    ___printf_chk
+      at ./debug/printf_chk.c:33
+      in /lib/x86_64-linux-gnu/libc.so.6
+    printf
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:112
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:161
+    __libc_start_call_main
+      at ../sysdeps/nptl/libc_start_call_main.h:58
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main_impl
+      at ../csu/libc-start.c:392
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _start
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1.02K consumed over 1 calls from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:225
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+472B peak memory consumed over 4 calls from
+__fopen_internal
+  at ./libio/iofopen.c:65
+  in /lib/x86_64-linux-gnu/libc.so.6
+_IO_new_fopen
+  at ./libio/iofopen.c:86
+472B consumed over 1 calls from:
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:42
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:225
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+
+MEMORY LEAKS
+4.19M leaked over 1 calls from
+mem_work_leak
+  at /home/cdq4096/projects/p1CodeTest/html_test/libmemwork/mem_work.cpp:73
+  in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/../lib/libmemwork.so
+4.19M leaked over 1 calls from:
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:223
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+4.10K leaked over 5 calls from
+__GI__IO_file_doallocate
+  at ./libio/filedoalloc.c:101
+  in /lib/x86_64-linux-gnu/libc.so.6
+4.10K leaked over 1 calls from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_overflow
+      at ./libio/fileops.c:744
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_xsputn
+      at ./libio/fileops.c:1243
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_xsputn
+      at ./libio/fileops.c:1196
+    outstring_func
+      at ./stdio-common/vfprintf-internal.c:239
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __vfprintf_internal
+      at ./stdio-common/vfprintf-internal.c:1263
+    ___printf_chk
+      at ./debug/printf_chk.c:33
+      in /lib/x86_64-linux-gnu/libc.so.6
+    printf
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:112
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:161
+    __libc_start_call_main
+      at ../sysdeps/nptl/libc_start_call_main.h:58
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __libc_start_main_impl
+      at ../csu/libc-start.c:392
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _start
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+
+MOST TEMPORARY ALLOCATIONS
+4 temporary allocations of 5 allocations in total (80.00%) from
+__GI__IO_file_doallocate
+  at ./libio/filedoalloc.c:101
+  in /lib/x86_64-linux-gnu/libc.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:225
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:182
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:215
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    __GI__IO_doallocbuf
+      at ./libio/genops.c:347
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_new_file_underflow
+      at ./libio/fileops.c:485
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_default_uflow
+      at ./libio/genops.c:362
+      in /lib/x86_64-linux-gnu/libc.so.6
+    __GI__IO_getline_info
+      at ./libio/iogetline.c:60
+      in /lib/x86_64-linux-gnu/libc.so.6
+    _IO_fgets
+      at ./libio/iofgets.c:53
+      in /lib/x86_64-linux-gnu/libc.so.6
+    fgets
+      at /usr/include/x86_64-linux-gnu/bits/stdio2.h:266
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+    read_mem
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:44
+    main
+      at /home/cdq4096/projects/p1CodeTest/html_test/src/main.cpp:220
+      in /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+
+1 temporary allocations of 1 allocations in total (100.00%) from
+0x7b749b4aa938
+  in /lib/x86_64-linux-gnu/libstdc++.so.6
+1 temporary allocations of 1 allocations in total (100.00%) from:
+    call_init
+      at ./elf/dl-init.c:70
+      in /lib64/ld-linux-x86-64.so.2
+    call_init
+      at ./elf/dl-init.c:33
+      in /lib64/ld-linux-x86-64.so.2
+    _dl_init
+      at ./elf/dl-init.c:117
+    0x7b749b7a62c8
+      at ./elf/rtld.c:0
+      in /lib64/ld-linux-x86-64.so.2
+
+
+total runtime: 20.26s.
+calls to allocation functions: 12 (0/s)
+temporary memory allocations: 5 (0/s)
+peak heap memory consumption: 272.71M
+peak RSS (including heaptrack overhead): 275.95M
+total memory leaked: 4.20M

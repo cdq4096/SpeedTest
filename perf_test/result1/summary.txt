@@ -1,0 +1,57 @@
+==================================================================
+ p1bench performance report (perf + heaptrack)
+==================================================================
+generated          : 2026-11-18 22:21:01
+bench              : /home/cdq4096/projects/p1CodeTest/html_test/build/Release/bin/bench
+bench args         : -t 20 --mem-mb 256 
+heaptrack args     : -t 20 --mem-mb 256 --leak-mb 4 
+perf event         : cpu-clock:u
+
+---------------- [1] RUN TIME -----------------
+perf sample span   : 19.897 s
+perf round wall    : 19.960 s
+bench self-timed   : 19.587 s
+heaptrack runtime  : 20.26s
+program phases (perf round):
+  cpuwork            5734543858      9.964         575.55      259.2      259.2
+  memwork            1070703125      9.624         111.26      259.2      259.2
+
+---------------- [2] PERF: TIME SHARE BY DSO -----------------
+  overhead   est.time  samples          period  dso
+   50.71%   10.090 s     10018     10028028018  libcpuwork.so
+   49.29%    9.807 s      9737      9746746737  libmemwork.so
+  total: 100.00%
+
+---------------- [3] MEMORY -----------------
+program (perf round, no injected leak):
+  rss after init: 259.1 MB (peak 259.1 MB)
+  peak rss            : 259.2 MB
+program (heaptrack round, --leak-mb 4):
+  rss after init: 260.0 MB (peak 260.0 MB)
+  peak rss            : 264.0 MB
+  intentional leak    : 4 MB (not freed, for heaptrack)
+heaptrack (单位 M = MiB):
+  total runtime: 20.26s.
+  calls to allocation functions: 12 (0/s)
+  temporary memory allocations: 5 (0/s)
+  peak heap memory consumption: 272.71M
+  peak RSS (including heaptrack overhead): 275.95M
+  total memory leaked: 4.20M
+
+---------------- [4] OUTPUT FILES -----------------
+  bench_heaptrack.log
+  bench_perf.log
+  heaptrack.gz
+  heaptrack_summary.txt
+  leaked.folded
+  leaked.svg
+  peak.folded
+  peak.svg
+  perf.data
+  perf_dso_report.txt
+  perf_dso_share.txt
+  perf_record.log
+  perf_time_values.txt
+  perf_times.txt
+  perf_wall_seconds.txt
+  summary.txt

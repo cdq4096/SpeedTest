@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>p1bench 结果查看器</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-title">p1bench</div>
+        <div class="brand-sub">性能结果查看器</div>
+      </div>
+      <div class="sidebar-head">
+        <span>迭代结果</span>
+        <button type="button" id="refresh">刷新</button>
+      </div>
+      <nav id="result-list" class="result-list"></nav>
+      <div class="sidebar-foot" id="scan-time">正在加载…</div>
+    </aside>
+
+    <main class="main">
+      <div id="empty" class="empty">
+        <div class="big">正在加载结果…</div>
+      </div>
+
+      <div id="detail" class="detail hidden">
+        <header class="detail-head">
+          <div>
+            <h1 id="r-title"></h1>
+            <div id="r-meta" class="meta"></div>
+          </div>
+          <span id="r-badge" class="badge"></span>
+        </header>
+
+        <section>
+          <h2>运行时间</h2>
+          <div class="cards" id="time-cards"></div>
+        </section>
+
+        <section>
+          <h2>内存占用</h2>
+          <div class="cards" id="mem-cards"></div>
+        </section>
+
+        <section>
+          <h2>模块时间占比</h2>
+          <div class="chart-wrap">
+            <div class="chart-box"><canvas id="share-chart"></canvas></div>
+            <div class="share-table-wrap"><table id="share-table"></table></div>
+          </div>
+          <div class="note" id="share-note"></div>
+        </section>
+
+        <section>
+          <h2>内存火焰图</h2>
+          <div class="flame-grid" id="flame-grid"></div>
+          <div class="note">图内可悬停查看、点击缩放、Ctrl-F 搜索；缩略图较小可点「放大」。</div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-bar">
+        <span id="modal-title"></span>
+        <div class="modal-actions">
+          <a id="modal-open" target="_blank" rel="noopener">新标签页打开</a>
+          <button type="button" id="modal-close">关闭</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <object id="modal-obj" type="image/svg+xml"></object>
+      </div>
+    </div>
+  </div>
+
+  <script src="/vendor/chart.umd.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

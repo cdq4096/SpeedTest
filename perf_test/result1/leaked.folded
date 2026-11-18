@@ -1,0 +1,2 @@
+_start;__libc_start_main_impl (libc-start.c);__libc_start_call_main (libc_start_call_main.h);printf (stdio2.h);main (main.cpp);___printf_chk (printf_chk.c);outstring_func (vfprintf-internal.c);__vfprintf_internal (vfprintf-internal.c);_IO_new_file_xsputn (fileops.c);_IO_new_file_xsputn (fileops.c);_IO_new_file_overflow (fileops.c);__GI__IO_doallocbuf (genops.c);__GI__IO_file_doallocate (filedoalloc.c); 4096
+main (main.cpp);mem_work_leak (mem_work.cpp); 4194304

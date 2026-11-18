@@ -1,0 +1,14 @@
+# build output
+build/
+
+# python cache
+__pycache__/
+*.pyc
+
+# large / regenerable measurement artifacts
+perf_test/result*/perf.data*
+perf_test/result*/heaptrack.*
+perf_test/result*/bench_*.log
+perf_test/result*/perf_record.log
+perf_test/result*/perf_times.txt
+perf_test/result*/perf_time_values.txt

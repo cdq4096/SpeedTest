@@ -1,0 +1,18 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 19K of event 'cpu-clock:u'
+# Event count (approx.): 19774774755
+#
+# Overhead       Samples        Period  Shared Object
+# ........  ............  ............  .............
+#
+    50.71%         10018   10028028018  libcpuwork.so
+    49.29%          9737    9746746737  libmemwork.so
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

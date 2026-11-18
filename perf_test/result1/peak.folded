@@ -1,0 +1,6 @@
+0x7b749b7a62c8 (rtld.c);call_init (dl-init.c);_dl_init (dl-init.c);call_init (dl-init.c);0x7b749b4aa938; 72704
+_start;__libc_start_main_impl (libc-start.c);__libc_start_call_main (libc_start_call_main.h);printf (stdio2.h);main (main.cpp);___printf_chk (printf_chk.c);outstring_func (vfprintf-internal.c);__vfprintf_internal (vfprintf-internal.c);_IO_new_file_xsputn (fileops.c);_IO_new_file_xsputn (fileops.c);_IO_new_file_overflow (fileops.c);__GI__IO_doallocbuf (genops.c);__GI__IO_file_doallocate (filedoalloc.c); 4096
+main (main.cpp);mem_work_init (mem_work.cpp); 268435456
+main (main.cpp);mem_work_leak (mem_work.cpp); 4194304
+main (main.cpp);read_mem (main.cpp);__fopen_internal (iofopen.c);_IO_new_fopen (iofopen.c); 472
+main (main.cpp);fgets (stdio2.h);read_mem (main.cpp);_IO_fgets (iofgets.c);__GI__IO_getline_info (iogetline.c);__GI__IO_default_uflow (genops.c);_IO_new_file_underflow (fileops.c);__GI__IO_doallocbuf (genops.c);__GI__IO_file_doallocate (filedoalloc.c); 1024
